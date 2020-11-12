@@ -10,11 +10,11 @@
 import sys
 
 if __name__ == '__main__':
-    A = tuple(map(int, input().split()))
+    A = tuple(map(float, input().split()))
     if not A:
         print('Заданный кортеж пуст', file=sys.stderr)
         exit(1)
 
     A = tuple(abs(i) for i in A)
     i_min = A.index(min(A))
-    print(i_min)
+    print(i_min+1)
