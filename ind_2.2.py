@@ -15,9 +15,9 @@ if __name__ == '__main__':
         print('Заданный кортеж пуст', file=sys.stderr)
         exit(1)
 
-    for a in A:
-        if a < 0:
-            a_den = A.index(a)
+    for i, j in enumerate(a):
+        if j < 0:
+            a_den = i
             break
 
     new_a = A[a_den + 1:]
